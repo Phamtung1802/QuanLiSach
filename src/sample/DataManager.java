@@ -46,7 +46,7 @@ public class DataManager implements Serializable {
                 e.printStackTrace();
                 System.out.println("loi");
             }
-        };
+        }
         try {
             writer.close();
         }
@@ -112,5 +112,4 @@ public class DataManager implements Serializable {
         }
         return IDcode;
     }
-
 }
