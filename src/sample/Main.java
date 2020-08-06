@@ -9,6 +9,8 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.File;
+
 public class Main extends Application {
     @FXML
     private TableView<Book> DisplayTable;
@@ -31,6 +33,8 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         DataManager.loadList();
+        BookList list=new BookList();
+        DataManager.AppendFile(new File("appendtest.txt"),list);
         launch(args);
     }
 }

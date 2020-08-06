@@ -10,7 +10,7 @@ public class Book {
         private String iD;
         private String lang;
 
-        public Book(String title,String lang, long price, String date, String author, String publisher, String category) {
+        public Book(String iD,String title,String lang, long price, String date, String author, String publisher, String category) {
             this.title = title;
             this.price = price;
             this.date = date;
@@ -18,6 +18,7 @@ public class Book {
             this.publisher = publisher;
             this.category= category;
             this.lang=lang;
+            this.iD=iD;
         }
 
         @Override
