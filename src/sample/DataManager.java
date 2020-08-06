@@ -58,7 +58,7 @@ public class DataManager implements Serializable {
 
 
 
-    public static void AppendFile(File csvFile,BookList list)  {
+    public static void appendFile(File csvFile, BookList list)  {
         FileWriter writer=getWriter(getIDFile(),true);
         FileReader reader=getReader(csvFile);
         StringBuffer data=new StringBuffer("");

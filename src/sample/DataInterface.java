@@ -1,5 +1,7 @@
 package sample;
 
+import java.io.File;
+
 public class DataInterface {
     private static BookList dataList=new BookList();
     private static final DataInterface dataInterface= new DataInterface();
@@ -26,5 +28,10 @@ public class DataInterface {
         return dataList;
     }
 
+    public void appendList(File csvFile){
+        DataManager.appendFile(csvFile,dataList);
+        read();
+        DataManager.WriteFile(dataList,false);
+    }
 
 }
