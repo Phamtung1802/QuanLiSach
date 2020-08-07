@@ -1,6 +1,8 @@
 package sample;
 
 import java.io.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class DataManager implements Serializable {
@@ -40,7 +42,7 @@ public class DataManager implements Serializable {
         FileWriter writer=getWriter(getIDFile(),doesAppend);
         for(Book book:list) {
             try {
-                writer.write(book.getiD()+","+book.getTitle()+","+book.getLang()+","+book.getPrice()+","+book.getDate()+","+book.getAuthor()+","+book.getLang()+","+book.getPublisher()+","+book.getCategory()+"\n");
+                writer.write(book.getId()+","+book.getTitle()+","+book.getLang()+","+book.getPrice()+","+book.getDate()+","+book.getAuthor()+","+book.getLang()+","+book.getPublisher()+","+book.getCategory()+"\n");
                 writer.flush();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -68,7 +70,6 @@ public class DataManager implements Serializable {
                 data.append((char)code);
             }
             reader.close();
-            System.out.println(data);
             writer.append(data);
             writer.close();
 
@@ -112,4 +113,80 @@ public class DataManager implements Serializable {
         }
         return IDcode;
     }
+
+
+    public static BookList iterateList(String value, BookList dataList,String filter){
+        BookList temp=new BookList();
+        String regex = ".*"+value+".*";
+        Pattern pattern= Pattern.compile(regex);
+        String stringToBeMatched;
+        Matcher matcher;
+        if(filter.equals("ID")) {
+            for (Book book : dataList) {
+                stringToBeMatched =book.getId();
+                matcher = pattern.matcher(stringToBeMatched);
+                if (matcher.matches()) {
+                    temp.add(book);
+                }
+            }
+        }
+        else if(filter.equals("Tên Sách")) {
+            for (Book book : dataList) {
+                stringToBeMatched = book.getTitle();
+                matcher = pattern.matcher(stringToBeMatched);
+                if (matcher.matches()) {
+                    temp.add(book);
+                }
+            }
+        }
+        else if(filter.equals("Ngôn Ngữ")) {
+            for (Book book : dataList) {
+                stringToBeMatched = book.getLang();
+                matcher = pattern.matcher(stringToBeMatched);
+                if (matcher.matches()) {
+                    temp.add(book);
+                }
+            }
+        }
+        else if(filter.equals("Tác Giả")) {
+            for (Book book : dataList) {
+                stringToBeMatched = book.getAuthor();
+                matcher = pattern.matcher(stringToBeMatched);
+                if (matcher.matches()) {
+                    temp.add(book);
+                }
+            }
+        }
+        else if(filter.equals("Nhà Xuất Bản")) {
+            for (Book book : dataList) {
+                stringToBeMatched = book.getPublisher();
+                matcher = pattern.matcher(stringToBeMatched);
+                if (matcher.matches()) {
+                    temp.add(book);
+                }
+            }
+        }
+        else if(filter.equals("Thể Loại")) {
+            for (Book book : dataList) {
+                stringToBeMatched = book.getCategory();
+                matcher = pattern.matcher(stringToBeMatched);
+                if (matcher.matches()) {
+                    temp.add(book);
+                }
+            }
+        }
+        else if(filter.equals("Giá Tiền")) {
+            for (Book book : dataList) {
+                stringToBeMatched = Long.toString(book.getPrice());
+                matcher = pattern.matcher(stringToBeMatched);
+                if (matcher.matches()) {
+                    temp.add(book);
+                }
+            }
+        }
+        return temp;
+    }
+
+
+
 }

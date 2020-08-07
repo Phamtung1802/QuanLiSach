@@ -7,7 +7,7 @@ public class Book {
         private String author;
         private String publisher;
         private String category;
-        private String iD;
+        private String id;
         private String lang;
 
         public Book(String iD,String title,String lang, long price, String date, String author, String publisher, String category) {
@@ -18,7 +18,7 @@ public class Book {
             this.publisher = publisher;
             this.category= category;
             this.lang=lang;
-            this.iD=iD;
+            this.id =iD;
         }
 
         @Override
@@ -41,12 +41,12 @@ public class Book {
             this.category = category;
         }
 
-        public String getiD() {
-            return iD;
+        public String getId() {
+            return id;
         }
 
-        public void setiD(String iD) {
-            this.iD = iD;
+        public void setId(String id) {
+            this.id = id;
         }
 
         public String getTitle() {
