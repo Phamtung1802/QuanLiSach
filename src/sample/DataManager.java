@@ -148,6 +148,7 @@ public class DataManager implements Serializable {
                 }
             }
         }
+
         else if(filter.equals("Tác Giả")) {
             for (Book book : dataList) {
                 stringToBeMatched = book.getAuthor();
@@ -186,7 +187,4 @@ public class DataManager implements Serializable {
         }
         return temp;
     }
-
-
-
 }

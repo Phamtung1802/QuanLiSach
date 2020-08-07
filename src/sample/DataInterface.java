@@ -8,6 +8,7 @@ import java.util.regex.Pattern;
 public class DataInterface {
     private static BookList dataList=new BookList();
     private static final DataInterface dataInterface= new DataInterface();
+    private static Integer idPool;
 
     private DataInterface(){
 
