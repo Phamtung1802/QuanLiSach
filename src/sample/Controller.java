@@ -43,7 +43,6 @@ public class Controller implements javafx.fxml.Initializable  {
 
     BookList list=DataInterface.getINSTANCE().getLib();
     ObservableList<Book> datalist = FXCollections.observableArrayList();
-    ObservableList<String> filter= FXCollections.observableArrayList();
     String filterString;
 
 
