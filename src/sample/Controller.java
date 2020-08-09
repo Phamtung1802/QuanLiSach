@@ -133,7 +133,7 @@ public class Controller implements javafx.fxml.Initializable  {
             datalist.clear();
             datalist.addAll(list);
         }catch (NullPointerException e){
-            
+
         }
     }
 

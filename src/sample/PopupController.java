@@ -50,6 +50,7 @@ public class PopupController implements javafx.fxml.Initializable  {
     public void save() {
         DataInterface.getINSTANCE().addBook(Integer.toString(list.size()+1),name.getText(),lang.getText(),Long.parseLong(price.getText()),date.getText(),author.getText(),publisher.getText(),category.getText());
         Stage stage = (Stage) save.getScene().getWindow();
+        Controller.changeTable(Controller.list);
         stage.close();
     }
     public void cancel() {
