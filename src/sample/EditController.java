@@ -51,7 +51,6 @@ public class EditController implements javafx.fxml.Initializable  {
 
     }
     public void save() {
-
         DataInterface.getINSTANCE().editBook(id.getText(),name.getText(),lang.getText(),price.getText(),date.getText(),author.getText(),publisher.getText(),category.getText());
         Stage stage = (Stage) save.getScene().getWindow();
         stage.close();
@@ -87,6 +86,12 @@ public class EditController implements javafx.fxml.Initializable  {
             category.setText("");
             System.out.println("khong tim thay");
         }
+    }
+    public void delete(){
+        DataInterface.getINSTANCE().removeBook(Integer.parseInt(id.getText())-1);
+        Controller.list= DataInterface.getINSTANCE().getLib();
+        Stage stage = (Stage) cancel.getScene().getWindow();
+        stage.close();
     }
 
 }

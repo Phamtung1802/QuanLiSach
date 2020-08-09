@@ -14,7 +14,8 @@
       <TextField fx:id="publisher" layoutX="13.0" layoutY="230.0" prefHeight="25.0" prefWidth="375.0" promptText="Nhà Xuất Bản" />
       <TextField fx:id="category" layoutX="13.0" layoutY="270.0" prefHeight="25.0" prefWidth="375.0" promptText="Thể Loại" />
       <Button fx:id="save" layoutX="14.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="25.0" prefWidth="96.0" text="Save" />
-      <Button fx:id="cancel" layoutX="125.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#cancel" prefHeight="25.0" prefWidth="94.0" text="Cancel" />
+      <Button fx:id="delete" layoutX="117.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#delete" prefHeight="25.0" prefWidth="94.0" text="Delete" />
       <TextField fx:id="id" layoutX="14.0" layoutY="2.0" onKeyTyped="#findId" prefHeight="25.0" prefWidth="88.0" promptText="id" />
+      <Button fx:id="cancel" layoutX="219.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#cancel" prefHeight="25.0" prefWidth="94.0" text="Cancel" />
    </children>
 </Pane>

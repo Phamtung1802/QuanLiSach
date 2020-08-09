@@ -19,6 +19,12 @@ public class DataInterface {
         return dataInterface;
     }
 
+    public void removeBook(int index){
+        dataList.remove(index);
+        DataManager.WriteFile(dataList,false);
+        read();
+    }
+
     public BookList addBook(String id,String title,String lang, long price, String date, String author, String publisher, String category){
         dataList.add(new Book(id,lang,title,price,date,author,publisher,category));
         Collections.sort(dataList);

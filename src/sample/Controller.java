@@ -77,7 +77,7 @@ public class Controller implements javafx.fxml.Initializable  {
     }
 
 
-    BookList list=DataInterface.getINSTANCE().getLib();
+   public static BookList list=DataInterface.getINSTANCE().getLib();
     ObservableList<Book> datalist = FXCollections.observableArrayList();
     String filterString;
 
