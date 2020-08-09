@@ -69,14 +69,13 @@ public class EditController implements javafx.fxml.Initializable  {
                     break;
                 }
             }
-            Book indexNum=list.get(list.indexOf(index));
-            name.setText(indexNum.getTitle());
-            lang.setText(indexNum.getLang());
-            price.setText(Long.toString(indexNum.getPrice()));
-            date.setText(indexNum.getDate());
-            author.setText(indexNum.getAuthor());
-            publisher.setText(indexNum.getPublisher());
-            category.setText(indexNum.getCategory());
+            name.setText(list.get(list.indexOf(index)).getTitle());
+            lang.setText(list.get(list.indexOf(index)).getLang());
+            price.setText(Long.toString(list.get(list.indexOf(index)).getPrice()));
+            date.setText(list.get(list.indexOf(index)).getDate());
+            author.setText(list.get(list.indexOf(index)).getAuthor());
+            publisher.setText(list.get(list.indexOf(index)).getPublisher());
+            category.setText(list.get(list.indexOf(index)).getCategory());
 
         }catch (IndexOutOfBoundsException e){
             name.setText("");
