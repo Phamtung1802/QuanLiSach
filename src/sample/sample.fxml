@@ -33,6 +33,7 @@
                         <ChoiceBox fx:id="filterBox" layoutX="319.0" layoutY="3.0" prefHeight="25.0" prefWidth="122.0" />
                                 <Button fx:id="addToList" layoutX="444.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#addToList" prefHeight="25.0" prefWidth="80.0" text="Thêm" />
                                 <Button fx:id="edit" layoutX="527.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#edit" prefHeight="25.0" prefWidth="80.0" text="Sửa" />
+                        <Button fx:id="quickAdd" layoutX="609.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#quickAdd" prefHeight="25.0" prefWidth="91.0" text="Thêm Nhanh" />
                             </children>
                         </Pane>
                     </content>

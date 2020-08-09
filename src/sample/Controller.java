@@ -10,8 +10,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.StackPane;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -124,6 +126,15 @@ public class Controller implements javafx.fxml.Initializable  {
         }catch (NullPointerException e){
             System.out.println("null");
         }
+    }
+
+    public void quickAdd(){
+        FileChooser fileChooser = new FileChooser();
+        File selectedFile = fileChooser.showOpenDialog(new Stage());
+        DataInterface.getINSTANCE().appendList(selectedFile);
+        list=DataInterface.getINSTANCE().getLib();
+        datalist.clear();
+        datalist.addAll(list);
     }
 
 }

@@ -63,6 +63,8 @@ public class DataInterface {
         read();
         Collections.sort(dataList);
         DataManager.WriteFile(dataList,false);
+        read();
+
     }
 
 
