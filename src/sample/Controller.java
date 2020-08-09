@@ -76,10 +76,14 @@ public class Controller implements javafx.fxml.Initializable  {
     }
 
     public void onSearch(){
-        if (oTimkiem.getText()==""){
-            changeTable(list);
-        }else {
-            changeTable(DataManager.iterateList(oTimkiem.getText(),list,filterBox.getValue()));
+        try{
+            if (oTimkiem.getText()==""){
+                changeTable(list);
+            }else {
+                changeTable(DataManager.iterateList(oTimkiem.getText(),list,filterBox.getValue()));
+            }
+        }catch (NullPointerException e){
+
         }
     }
 
