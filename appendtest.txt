@@ -1,2 +1,0 @@
-3,Cuon Sach 1,English,1000,01/06/2007,Tac Gia 1,NXB Kim Dong,Giao Duc
-4,Cuon Sach 2,English,1000,01/06/2007,Tac Gia 1,NXB Kim Dong,Giao Duc
