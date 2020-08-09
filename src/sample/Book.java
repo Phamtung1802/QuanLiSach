@@ -1,6 +1,6 @@
 package sample;
 
-public class Book {
+public class Book implements Comparable<Book>{
         private String title;
         private long price;
         private String date;
@@ -97,4 +97,19 @@ public class Book {
             this.lang = lang;
         }
 
+
+
+    @Override
+    public int compareTo(Book o) {
+        if(Integer.parseInt(this.getId())==Integer.parseInt(o.getId())){
+            return 0;
+        }
+        if(Integer.parseInt(this.getId())>Integer.parseInt(o.getId())){
+            return 1;
+        }
+        else{
+            return -1;
+        }
+
+    }
 }

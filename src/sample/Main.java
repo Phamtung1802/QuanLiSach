@@ -35,6 +35,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
+        DataInterface.getINSTANCE().appendList(new File("Lib.txt"));
         DataInterface.getINSTANCE().read();
         launch(args);
     }

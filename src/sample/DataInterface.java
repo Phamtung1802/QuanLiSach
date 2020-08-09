@@ -2,6 +2,7 @@ package sample;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,6 +21,7 @@ public class DataInterface {
 
     public BookList addBook(String id,String title,String lang, long price, String date, String author, String publisher, String category){
         dataList.add(new Book(id,lang,title,price,date,author,publisher,category));
+        Collections.sort(dataList);
         DataManager.WriteFile(dataList,false);
         return dataList;
     }
@@ -43,6 +45,7 @@ public class DataInterface {
         }catch (IndexOutOfBoundsException e){
             System.out.println("khong thay");
         }
+        Collections.sort(dataList);
         return dataList;
     }
 
@@ -58,6 +61,7 @@ public class DataInterface {
     public void appendList(File csvFile){
         DataManager.appendFile(csvFile,dataList);
         read();
+        Collections.sort(dataList);
         DataManager.WriteFile(dataList,false);
     }
 

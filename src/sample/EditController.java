@@ -76,6 +76,7 @@ public class EditController implements javafx.fxml.Initializable  {
             author.setText(list.get(list.indexOf(index)).getAuthor());
             publisher.setText(list.get(list.indexOf(index)).getPublisher());
             category.setText(list.get(list.indexOf(index)).getCategory());
+
         }catch (IndexOutOfBoundsException e){
             name.setText("");
             lang.setText("");
