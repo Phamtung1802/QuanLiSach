@@ -40,12 +40,10 @@ public class DataManager implements Serializable {
 
     public static void WriteFile(BookList list,boolean doesAppend) {
         FileWriter writer=getWriter(getIDFile(),doesAppend);
-        int id=1;
         for(Book book:list) {
             try {
-                writer.write(Integer.toString(id)+","+book.getTitle()+","+book.getLang()+","+book.getPrice()+","+book.getDate()+","+book.getAuthor()+","+book.getLang()+","+book.getPublisher()+","+book.getCategory()+"\n");
+                writer.write(book.getId()+","+book.getTitle()+","+book.getLang()+","+book.getPrice()+","+book.getDate()+","+book.getAuthor()+","+book.getLang()+","+book.getPublisher()+","+book.getCategory()+"\n");
                 writer.flush();
-                id++;
             } catch (IOException e) {
                 e.printStackTrace();
                 System.out.println("loi");
@@ -69,6 +67,7 @@ public class DataManager implements Serializable {
         int code=-1;
         try {
             while ((code =reader.read())!= -1) {
+                System.out.println("pending");
                 data.append((char)code);
             }
             reader.close();
