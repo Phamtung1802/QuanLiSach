@@ -134,7 +134,6 @@ public class DataManager implements Serializable {
                 }
             }
         }
-
         else if(filter.equals("Tên Sách")) {
             for (Book book : dataList) {
                 stringToBeMatched = book.getTitle();

@@ -96,6 +96,7 @@ public class Controller implements javafx.fxml.Initializable  {
         filterBox.getSelectionModel().selectedItemProperty().addListener(
                 (ObservableValue<? extends String> observable, String oldValue, String newValue)-> {
                     filterString = newValue;
+                    System.out.println(filterBox.getValue());
                     onSearch();
                 }
         );

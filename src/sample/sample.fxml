@@ -38,6 +38,30 @@
                         </Pane>
                     </content>
                 </Tab>
+                <Tab text="Thêm Sản Phẩm">
+                    <content>
+                        <Pane prefHeight="493.0" prefWidth="1366.0">
+                            <children>
+                                <TableView layoutX="4.0" layoutY="32.0" prefHeight="704.0" prefWidth="1361.0">
+                                    <columns>
+                                        <TableColumn prefWidth="42.40002775192261" resizable="false" text="STT" />
+                                        <TableColumn prefWidth="411.19994354248047" resizable="false" text="Tên Sách" />
+                                        <TableColumn prefWidth="128.00015258789062" resizable="false" text="Ngôn Ngữ" />
+                                        <TableColumn prefWidth="102.4000244140625" resizable="false" text="Giá Tiền" />
+                                        <TableColumn prefWidth="180.0" resizable="false" text="Ngày Phát Hành" />
+                                        <TableColumn prefWidth="177.60009765625" resizable="false" text="Tác Giả" />
+                                        <TableColumn prefWidth="174.39990234375" resizable="false" text="Nhà Xuất Bản" />
+                                        <TableColumn prefWidth="147.199951171875" resizable="false" text="Thể Loại" />
+                                    </columns>
+                                </TableView>
+                                <TextField layoutX="4.0" layoutY="3.0" prefHeight="24.0" prefWidth="345.0" />
+                                <Button layoutX="364.0" layoutY="3.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="80.0" text="Tìm Kiếm" />
+                                <Button layoutX="449.0" layoutY="3.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="80.0" text="Sửa" />
+                                <Button layoutX="534.0" layoutY="3.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="80.0" text="Lưu" />
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
             </tabs>
         </TabPane>
     </children>
