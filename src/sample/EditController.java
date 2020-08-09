@@ -53,6 +53,7 @@ public class EditController implements javafx.fxml.Initializable  {
     public void save() {
         DataInterface.getINSTANCE().editBook(id.getText(),name.getText(),lang.getText(),price.getText(),date.getText(),author.getText(),publisher.getText(),category.getText());
         Stage stage = (Stage) save.getScene().getWindow();
+        Controller.changeTable(Controller.list);
         stage.close();
     }
     public void cancel() {

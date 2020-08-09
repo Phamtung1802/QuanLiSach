@@ -42,7 +42,7 @@ public class PopupController implements javafx.fxml.Initializable  {
 
     BookList list=DataInterface.getINSTANCE().getLib();
     ObservableList<Book> datalist = FXCollections.observableArrayList();
-    
+
     //    fx:controller="sample.Controller"
     public void initialize(URL location, ResourceBundle resources) {
 

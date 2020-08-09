@@ -76,13 +76,9 @@ public class Controller implements javafx.fxml.Initializable  {
         }
     }
 
-
-   public static BookList list=DataInterface.getINSTANCE().getLib();
-    ObservableList<Book> datalist = FXCollections.observableArrayList();
+    public static BookList list=DataInterface.getINSTANCE().getLib();
+    public static ObservableList<Book> datalist = FXCollections.observableArrayList();
     String filterString;
-
-
-
 
 
 //    fx:controller="sample.Controller"
@@ -108,7 +104,7 @@ public class Controller implements javafx.fxml.Initializable  {
         DisplayTable.setItems(datalist);
 
     }
-    public void changeTable(BookList list){
+    public static void changeTable(BookList list){
         datalist.clear();
         datalist.addAll(list);
     }
