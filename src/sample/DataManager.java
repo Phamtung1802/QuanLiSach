@@ -95,7 +95,9 @@ public class DataManager implements Serializable {
         String[] newdata=data.toString().split("\n");
         if(newdata.length>1) {
             for (int i = 0; i < newdata.length; i++) {
+
                 String[] tempstr = newdata[i].split(",");
+                System.out.println(tempstr[3]);
                 list.add(new Book(tempstr[0],tempstr[1], tempstr[2], Long.parseLong(tempstr[3]), tempstr[4], tempstr[5], tempstr[6], tempstr[7]));
 
             }

@@ -125,12 +125,16 @@ public class Controller implements javafx.fxml.Initializable  {
     }
 
     public void quickAdd(){
-        FileChooser fileChooser = new FileChooser();
-        File selectedFile = fileChooser.showOpenDialog(new Stage());
-        DataInterface.getINSTANCE().appendList(selectedFile);
-        list=DataInterface.getINSTANCE().getLib();
-        datalist.clear();
-        datalist.addAll(list);
+        try {
+            FileChooser fileChooser = new FileChooser();
+            File selectedFile = fileChooser.showOpenDialog(new Stage());
+            DataInterface.getINSTANCE().appendList(selectedFile);
+            list = DataInterface.getINSTANCE().getLib();
+            datalist.clear();
+            datalist.addAll(list);
+        }catch (NullPointerException e){
+            
+        }
     }
 
 }
