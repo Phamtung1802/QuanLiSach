@@ -13,7 +13,7 @@
     <children>
         <TabPane prefHeight="768.0" prefWidth="1366.0" tabClosingPolicy="UNAVAILABLE">
             <tabs>
-                <Tab text="Màn Hình Khách">
+                <Tab text="Main">
                     <content>
                         <Pane prefHeight="493.0" prefWidth="1366.0">
                             <children>
