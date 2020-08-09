@@ -168,9 +168,11 @@ public class DataManager implements Serializable {
             }
         }
         else if(filter.equals("Thể Loại")) {
+            String regex2 = ".*"+value+".*[^/n]";
+            Pattern pattern2= Pattern.compile(regex2);
             for (Book book : dataList) {
                 stringToBeMatched = book.getCategory();
-                matcher = pattern.matcher(stringToBeMatched);
+                matcher = pattern2.matcher(stringToBeMatched);
                 if (matcher.matches()) {
                     temp.add(book);
                 }

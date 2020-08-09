@@ -4,9 +4,15 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -40,6 +46,20 @@ public class Controller implements javafx.fxml.Initializable  {
     @FXML private TextField oTimkiem;
 
     @FXML private ChoiceBox<String> filterBox;
+    @FXML private void addToList() throws IOException {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Popup.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Thêm Tựa Sách");
+            stage.setScene(new Scene(root1));
+            stage.setResizable(false);
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     BookList list=DataInterface.getINSTANCE().getLib();
     ObservableList<Book> datalist = FXCollections.observableArrayList();
@@ -64,9 +84,12 @@ public class Controller implements javafx.fxml.Initializable  {
         filterBox.getSelectionModel().selectedItemProperty().addListener(
                 (ObservableValue<? extends String> observable, String oldValue, String newValue)-> {
                     filterString = newValue;
+                    System.out.println(filterBox.getValue());
                     onSearch();
                 }
         );
+
+
         DisplayTable.setItems(datalist);
 
     }
@@ -77,13 +100,15 @@ public class Controller implements javafx.fxml.Initializable  {
 
     public void onSearch(){
         try{
+            System.out.println(oTimkiem.getText());
+
             if (oTimkiem.getText()==""){
                 changeTable(list);
             }else {
                 changeTable(DataManager.iterateList(oTimkiem.getText(),list,filterBox.getValue()));
             }
         }catch (NullPointerException e){
-
+            System.out.println("null");
         }
     }
 
