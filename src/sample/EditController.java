@@ -91,6 +91,7 @@ public class EditController implements javafx.fxml.Initializable  {
     public void delete(){
         DataInterface.getINSTANCE().removeBook(Integer.parseInt(id.getText())-1);
         Controller.list= DataInterface.getINSTANCE().getLib();
+        Controller.changeTable(Controller.list);
         Stage stage = (Stage) cancel.getScene().getWindow();
         stage.close();
     }

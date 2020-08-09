@@ -93,7 +93,6 @@ public class DataManager implements Serializable {
             e.printStackTrace();
         }
         String[] newdata=data.toString().split("\n");
-        System.out.println(newdata.toString());
         if(newdata.length>1) {
             for (int i = 0; i < newdata.length; i++) {
                 String[] tempstr = newdata[i].split(",");

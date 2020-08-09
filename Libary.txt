@@ -1,4 +1,6 @@
 1,Cuon Sach 2,English,1000,01/06/2007,Tac Gia 1,English,English,English
 2,Cuon Sach 2,English,1000,01/06/2007,Tac Gia 1,English,English,English
-3,Cuon Sach 1,English,1000,01/06/2007,Tac Gia 1,English,English,English
-4,Cuon dacbiet,English,1000,01/06/2007,Tac Gia 1,English,English,English
+3,Cuon Sach 2,English,1000,01/06/2007,Tac Gia 1,English,English,English
+4,Cuon Sach 1,English,1000,01/06/2007,Tac Gia 1,English,English,English
+5,Cuon Sach 2,English,3000,01/06/2007,Tac Gia 1,English,English,English
+6,Cuon dacbiet,English,1000,01/06/2007,Tac Gia 1,English,English,English
