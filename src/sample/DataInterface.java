@@ -23,6 +23,29 @@ public class DataInterface {
         DataManager.WriteFile(dataList,false);
         return dataList;
     }
+    public BookList editBook(String ID,String title,String lang, String price, String date, String author, String publisher, String category){
+        Book index=null;
+        try {
+            for (Book book : dataList) {
+                if (ID.equals(book.getId())) {
+                    index = book;
+                    break;
+                }
+            }
+            dataList.get(dataList.indexOf(index)).setTitle(title);
+            dataList.get(dataList.indexOf(index)).setLang(lang);
+            dataList.get(dataList.indexOf(index)).setPrice(Long.parseLong(price));
+            dataList.get(dataList.indexOf(index)).setDate(date);
+            dataList.get(dataList.indexOf(index)).setAuthor(author);
+            dataList.get(dataList.indexOf(index)).setPublisher(publisher);
+            dataList.get(dataList.indexOf(index)).setCategory(category);
+            DataManager.WriteFile(dataList, false);
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("khong thay");
+        }
+        return dataList;
+    }
+
 
     public void read(){
         dataList=DataManager.loadList();

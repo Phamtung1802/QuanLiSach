@@ -49,11 +49,8 @@ public class PopupController implements javafx.fxml.Initializable  {
     //    fx:controller="sample.Controller"
     public void initialize(URL location, ResourceBundle resources) {
 
-
-
     }
     public void save() {
-        DataInterface.getINSTANCE().addBook("3", name.getText(), lang.getText(), Long.parseLong(price.getText()), date.getText(), author.getText(), publisher.getText(), category.getText());
         Stage stage = (Stage) save.getScene().getWindow();
         stage.close();
     }

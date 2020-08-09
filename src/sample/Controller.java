@@ -46,6 +46,20 @@ public class Controller implements javafx.fxml.Initializable  {
     @FXML private TextField oTimkiem;
 
     @FXML private ChoiceBox<String> filterBox;
+    @FXML private void edit(){
+        try {
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Edit.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Sửa");
+            stage.setScene(new Scene(root1));
+            stage.setResizable(false);
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
     @FXML private void addToList() throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Popup.fxml"));

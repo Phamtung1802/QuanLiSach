@@ -32,7 +32,7 @@
                                 <TextField fx:id="oTimkiem" layoutX="4.0" layoutY="3.0" onKeyTyped="#onSearch" prefHeight="25.0" prefWidth="311.0" promptText="Tìm Kiếm" />
                         <ChoiceBox fx:id="filterBox" layoutX="319.0" layoutY="3.0" prefHeight="25.0" prefWidth="122.0" />
                                 <Button fx:id="addToList" layoutX="444.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#addToList" prefHeight="25.0" prefWidth="80.0" text="Thêm" />
-                                <Button layoutX="527.0" layoutY="3.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Sửa" />
+                                <Button fx:id="edit" layoutX="527.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#edit" prefHeight="25.0" prefWidth="80.0" text="Sửa" />
                             </children>
                         </Pane>
                     </content>
