@@ -6,7 +6,6 @@ import java.util.Collections;
 public class ListManager {
     private static BookList dataList=new BookList();
     private static final ListManager dataInterface= new ListManager();
-    private static Integer idPool;
 
     private ListManager(){
 
@@ -30,6 +29,7 @@ public class ListManager {
     }
     public BookList editBook(String ID,String title,String lang, String price, String date, String author, String publisher, String category){
         Book index=null;
+        Book editTarget=null;
         try {
             for (Book book : dataList) {
                 if (ID.equals(book.getId())) {
@@ -37,13 +37,14 @@ public class ListManager {
                     break;
                 }
             }
-            dataList.get(dataList.indexOf(index)).setTitle(title);
-            dataList.get(dataList.indexOf(index)).setLang(lang);
-            dataList.get(dataList.indexOf(index)).setPrice(Long.parseLong(price));
-            dataList.get(dataList.indexOf(index)).setDate(date);
-            dataList.get(dataList.indexOf(index)).setAuthor(author);
-            dataList.get(dataList.indexOf(index)).setPublisher(publisher);
-            dataList.get(dataList.indexOf(index)).setCategory(category);
+            editTarget=dataList.get(dataList.indexOf(index));
+            editTarget.setTitle(title);
+            editTarget.setLang(lang);
+            editTarget.setPrice(Long.parseLong(price));
+            editTarget.setDate(date);
+            editTarget.setAuthor(author);
+            editTarget.setPublisher(publisher);
+            editTarget.setCategory(category);
             DataManager.WriteFile(dataList, false);
         }catch (IndexOutOfBoundsException e){
             System.out.println("khong thay");
