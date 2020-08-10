@@ -1,18 +1,18 @@
-1,Giáo Trình Kỹ Thuật Lập Trình C Căn Bản Và Nâng Cao,Tiếng Việt,80000,01/06/2007,Nhiều Tác Giả,NXB Thanh Niên,CNTT
-2,Giáo Trình Tự Học AutoCAD 2019 Thực Hành Bằng Hình Minh Họa ,Tiếng Việt,83000,10/08/2020,Nhiều Tác Giả,NXB Đồng Nai,CNTT
-3,Hướng Dẫn Sử Dụng Microsoft Office,Tiếng Việt,92000,10/07/2017,Phạm Quang Huy,NXB Thanh Niên,CNTT
-4,Thiết Kế Web Với Dreamweaver,Tiếng Việt,68000,12/06/2016,Phạm Quang Huy,NXB Bách Khoa,CNTT
-5,Lập Trình Với C# Xây Dựng Ứng Dụng,Tiếng Việt,88000,12/12/2013,Phạm Quang Huy,NXB Thanh Niên,CNTT
-6,Head First Design Patterns: A Brain-Friendly Guide,Tiếng Anh,600000,16/02/2003,Eric Freeman,NXB,CNTT
-7,Clean Code: A Handbook of Agile Software Craftsmanship,Tiếng Anh,800000,16/02/2005,Robert C. Martin,NXB,CNTT
-8,Agile Principles-Patterns-andPractices in C#,Tiếng Anh,768000,16/03/2009,Robert C. Martin,NXB,CNTT
-9,Working Effectively with Legacy Code,Tiếng Anh,768000,22/09/2004,Feathers Michael,NXB,CNTT
-10,JAVA Programming For Beginners Quick Start Guide,Tiếng Anh,680000,18/11/2018, Herbert Schildt,NXB,CNTT
-11,Chú vịt con xấu xí,Tiếng Việt,10000,11/11/1943, Hans Christian Andersen,NXB Đồng Nai,Truyện Thiếu Nhi
-12,Alice ở xứ sở diệu kỳ,Tiếng Việt,80000,01/01/1865, Lewis Carrol,NXB Đồng Nai,Truyện Thiếu Nhi
-13,Charlie và nhà máy Sô-cô-la,Tiếng Việt,52000,05/07/2005, Roald Dahl,NXB Kim Đồng,Truyện Thiếu Nhi
-14,Những cuộc phiêu lưu của Pinocchio,Tiếng Việt,45000,05/07/2015, Carlo Collodi,NXB Kim Đồng,Truyện Thiếu Nhi
-15,Charlotte và Wilbur,Tiếng Việt,55000,05/07/2015, E.B. White,NXB Kim Đồng,Truyện Thiếu Nhi
-16,Dế Mèn Phiêu Lưu Ký,Tiếng Việt,65000,05/07/1988, Nguyễn Nhật Ánh,NXB Kim Đồng,Truyện Thiếu Nhi
-17,Non Nước Việt Nam 63 Tỉnh Thành,Tiếng Việt,42000,05/07/1988, Nhóm Tri Thức Trẻ,NXB Kim Đồng,Lịch Sử
-18,Đại Việt Sử Ký Toàn Thư Trọn Bộ,Tiếng Việt,151000,02/03/2020,Cao Huy Giu - Đào Duy Anh dịch,NXB Hồng Đức,Lịch Sử
+1,Giáo Trình Kỹ Thuật Lập Trình C Căn Bản Và Nâng Cao,Tiếng Việt,80000,01/06/2007,Nhiều Tác Giả,Tiếng Việt,Tiếng Việt,NXB Thanh Niên
+2,Giáo Trình Tự Học AutoCAD 2019 Thực Hành Bằng Hình Minh Họa ,Tiếng Việt,83000,10/08/2020,Nhiều Tác Giả,Tiếng Việt,Tiếng Việt,NXB Đồng Nai
+3,Hướng Dẫn Sử Dụng Microsoft Office,Tiếng Việt,92000,10/07/2017,Phạm Quang Huy,Tiếng Việt,Tiếng Việt,NXB Thanh Niên
+4,Thiết Kế Web Với Dreamweaver,Tiếng Việt,68000,12/06/2016,Phạm Quang Huy,Tiếng Việt,Tiếng Việt,NXB Bách Khoa
+5,Lập Trình Với C# Xây Dựng Ứng Dụng,Tiếng Việt,88000,12/12/2013,Phạm Quang Huy,Tiếng Việt,Tiếng Việt,NXB Thanh Niên
+6,Head First Design Patterns: A Brain-Friendly Guide,Tiếng Anh,600000,16/02/2003,Eric Freeman,Tiếng Anh,Tiếng Anh,NXB
+7,Clean Code: A Handbook of Agile Software Craftsmanship,Tiếng Anh,800000,16/02/2005,Robert C. Martin,Tiếng Anh,Tiếng Anh,NXB
+8,Agile Principles-Patterns-andPractices in C#,Tiếng Anh,768000,16/03/2009,Robert C. Martin,Tiếng Anh,Tiếng Anh,NXB
+9,Working Effectively with Legacy Code,Tiếng Anh,768000,22/09/2004,Feathers Michael,Tiếng Anh,Tiếng Anh,NXB
+10,JAVA Programming For Beginners Quick Start Guide,Tiếng Anh,680000,18/11/2018, Herbert Schildt,Tiếng Anh,Tiếng Anh,NXB
+11,Chú vịt con xấu xí,Tiếng Việt,10000,11/11/1943, Hans Christian Andersen,Tiếng Việt,Tiếng Việt,NXB Đồng Nai
+12,Alice ở xứ sở diệu kỳ,Tiếng Việt,80000,01/01/1865, Lewis Carrol,Tiếng Việt,Tiếng Việt,NXB Đồng Nai
+13,Charlie và nhà máy Sô-cô-la,Tiếng Việt,52000,05/07/2005, Roald Dahl,Tiếng Việt,Tiếng Việt,NXB Kim Đồng
+14,Những cuộc phiêu lưu của Pinocchio,Tiếng Việt,45000,05/07/2015, Carlo Collodi,Tiếng Việt,Tiếng Việt,NXB Kim Đồng
+15,Charlotte và Wilbur,Tiếng Việt,55000,05/07/2015, E.B. White,Tiếng Việt,Tiếng Việt,NXB Kim Đồng
+16,Dế Mèn Phiêu Lưu Ký,Tiếng Việt,65000,05/07/1988, Nguyễn Nhật Ánh,Tiếng Việt,Tiếng Việt,NXB Kim Đồng
+17,Non Nước Việt Nam 63 Tỉnh Thành,Tiếng Việt,42000,05/07/1988, Nhóm Tri Thức Trẻ,Tiếng Việt,Tiếng Việt,NXB Kim Đồng
+18,Đại Việt Sử Ký Toàn Thư Trọn Bộ,Tiếng Việt,151000,02/03/2020,Cao Huy Giu - Đào Duy Anh dịch,Tiếng Việt,Tiếng Việt,NXB Hồng Đức

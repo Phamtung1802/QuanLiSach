@@ -1,4 +1,4 @@
-package sample;
+package AppQuanLySach;
 
 public class Book implements Comparable<Book>{
         private String title;

@@ -4,7 +4,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PopupController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppQuanLySach.addController">
    <children>
       <TextField fx:id="name" layoutX="14.0" layoutY="30.0" prefHeight="25.0" prefWidth="375.0" promptText="Tên Sách" />
       <TextField fx:id="lang" layoutX="13.0" layoutY="70.0" prefHeight="25.0" prefWidth="375.0" promptText="Ngôn Ngữ" />

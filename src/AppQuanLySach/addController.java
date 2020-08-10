@@ -1,4 +1,4 @@
-package sample;
+package AppQuanLySach;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class PopupController implements javafx.fxml.Initializable  {
+public class addController implements javafx.fxml.Initializable  {
 
     @FXML
     private TextField name;
