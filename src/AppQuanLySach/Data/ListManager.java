@@ -5,14 +5,14 @@ import java.util.Collections;
 
 public class ListManager {
     private static BookList dataList=new BookList();
-    private static final ListManager dataInterface= new ListManager();
+    private static final ListManager listManager = new ListManager();
 
     private ListManager(){
 
     }
 
     public static ListManager getINSTANCE() {
-        return dataInterface;
+        return listManager;
     }
 
     public void removeBook(int index){

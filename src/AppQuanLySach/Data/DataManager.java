@@ -43,7 +43,7 @@ public class DataManager implements Serializable {
         int id=1;
         for(Book book:list) {
             try {
-                writer.write(Integer.toString(id)+","+book.getTitle()+","+book.getLang()+","+book.getPrice()+","+book.getDate()+","+book.getAuthor()+","+book.getLang()+","+book.getPublisher()+","+book.getCategory()+"\n");
+                writer.write(Integer.toString(id)+","+book.getTitle()+","+book.getLang()+","+book.getPrice()+","+book.getDate()+","+book.getAuthor()+","+book.getPublisher()+","+book.getCategory()+"\n");
                 writer.flush();
                 id++;
             } catch (IOException e) {
