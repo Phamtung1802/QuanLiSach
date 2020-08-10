@@ -38,7 +38,7 @@ public class EditController implements javafx.fxml.Initializable  {
     @FXML
     Button cancel;
 
-    BookList list=DataInterface.getINSTANCE().getLib();
+    BookList list= DataController.getINSTANCE().getLib();
     ObservableList<Book> datalist = FXCollections.observableArrayList();
 
 
@@ -51,7 +51,7 @@ public class EditController implements javafx.fxml.Initializable  {
 
     }
     public void save() {
-        DataInterface.getINSTANCE().editBook(id.getText(),name.getText(),lang.getText(),price.getText(),date.getText(),author.getText(),publisher.getText(),category.getText());
+        DataController.getINSTANCE().editBook(id.getText(),name.getText(),lang.getText(),price.getText(),date.getText(),author.getText(),publisher.getText(),category.getText());
         Stage stage = (Stage) save.getScene().getWindow();
         Controller.changeTable(Controller.list);
         stage.close();
@@ -89,8 +89,12 @@ public class EditController implements javafx.fxml.Initializable  {
         }
     }
     public void delete(){
-        DataInterface.getINSTANCE().removeBook(Integer.parseInt(id.getText())-1);
-        Controller.list= DataInterface.getINSTANCE().getLib();
+        try {
+            DataController.getINSTANCE().removeBook(Integer.parseInt(id.getText()) - 1);
+        }catch (NumberFormatException e){
+
+        }
+        Controller.list= DataController.getINSTANCE().getLib();
         Controller.changeTable(Controller.list);
         Stage stage = (Stage) cancel.getScene().getWindow();
         stage.close();

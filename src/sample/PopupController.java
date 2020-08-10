@@ -4,13 +4,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class PopupController implements javafx.fxml.Initializable  {
@@ -40,7 +37,7 @@ public class PopupController implements javafx.fxml.Initializable  {
     @FXML
     Button cancel;
 
-    BookList list=DataInterface.getINSTANCE().getLib();
+    BookList list= DataController.getINSTANCE().getLib();
     ObservableList<Book> datalist = FXCollections.observableArrayList();
 
     //    fx:controller="sample.Controller"
@@ -48,7 +45,7 @@ public class PopupController implements javafx.fxml.Initializable  {
 
     }
     public void save() {
-        DataInterface.getINSTANCE().addBook(Integer.toString(list.size()+1),name.getText(),lang.getText(),Long.parseLong(price.getText()),date.getText(),author.getText(),publisher.getText(),category.getText());
+        DataController.getINSTANCE().addBook(Integer.toString(list.size()+1),name.getText(),lang.getText(),Long.parseLong(price.getText()),date.getText(),author.getText(),publisher.getText(),category.getText());
         Stage stage = (Stage) save.getScene().getWindow();
         Controller.changeTable(Controller.list);
         stage.close();

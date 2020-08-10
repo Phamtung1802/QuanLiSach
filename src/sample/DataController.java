@@ -1,21 +1,18 @@
 package sample;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-public class DataInterface {
+public class DataController {
     private static BookList dataList=new BookList();
-    private static final DataInterface dataInterface= new DataInterface();
+    private static final DataController dataInterface= new DataController();
     private static Integer idPool;
 
-    private DataInterface(){
+    private DataController(){
 
     }
 
-    public static DataInterface getINSTANCE() {
+    public static DataController getINSTANCE() {
         return dataInterface;
     }
 
@@ -67,11 +64,8 @@ public class DataInterface {
     public void appendList(File csvFile){
         DataManager.appendFile(csvFile,dataList);
         read();
-        Collections.sort(dataList);
         DataManager.WriteFile(dataList,false);
+        Collections.sort(dataList);
         read();
-
     }
-
-
 }

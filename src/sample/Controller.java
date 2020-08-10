@@ -9,7 +9,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.StackPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -76,7 +75,7 @@ public class Controller implements javafx.fxml.Initializable  {
         }
     }
 
-    public static BookList list=DataInterface.getINSTANCE().getLib();
+    public static BookList list= DataController.getINSTANCE().getLib();
     public static ObservableList<Book> datalist = FXCollections.observableArrayList();
     String filterString;
 
@@ -128,8 +127,8 @@ public class Controller implements javafx.fxml.Initializable  {
         try {
             FileChooser fileChooser = new FileChooser();
             File selectedFile = fileChooser.showOpenDialog(new Stage());
-            DataInterface.getINSTANCE().appendList(selectedFile);
-            list = DataInterface.getINSTANCE().getLib();
+            DataController.getINSTANCE().appendList(selectedFile);
+            list = DataController.getINSTANCE().getLib();
             datalist.clear();
             datalist.addAll(list);
         }catch (NullPointerException e){
