@@ -6,11 +6,6 @@ import java.util.regex.Pattern;
 
 
 public class DataManager implements Serializable {
-
-    private synchronized void IDGenerator(){
-
-    }
-
     private static FileReader getReader(File getIDFile) {
         File IDcode=getIDFile;
         FileReader input = null;
