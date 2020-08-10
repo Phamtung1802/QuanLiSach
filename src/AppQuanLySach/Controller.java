@@ -75,7 +75,7 @@ public class Controller implements javafx.fxml.Initializable  {
         }
     }
 
-    public static BookList list= DataController.getINSTANCE().getLib();
+    public static BookList list= ListManager.getINSTANCE().getLib();
     public static ObservableList<Book> datalist = FXCollections.observableArrayList();
     String filterString;
 
@@ -127,8 +127,8 @@ public class Controller implements javafx.fxml.Initializable  {
         try {
             FileChooser fileChooser = new FileChooser();
             File selectedFile = fileChooser.showOpenDialog(new Stage());
-            DataController.getINSTANCE().appendList(selectedFile);
-            list = DataController.getINSTANCE().getLib();
+            ListManager.getINSTANCE().appendList(selectedFile);
+            list = ListManager.getINSTANCE().getLib();
             datalist.clear();
             datalist.addAll(list);
         }catch (NullPointerException e){

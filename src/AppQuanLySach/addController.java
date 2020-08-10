@@ -37,7 +37,7 @@ public class addController implements javafx.fxml.Initializable  {
     @FXML
     Button cancel;
 
-    BookList list= DataController.getINSTANCE().getLib();
+    BookList list= ListManager.getINSTANCE().getLib();
     ObservableList<Book> datalist = FXCollections.observableArrayList();
 
     //    fx:controller="sample.Controller"
@@ -45,7 +45,7 @@ public class addController implements javafx.fxml.Initializable  {
 
     }
     public void save() {
-        DataController.getINSTANCE().addBook(Integer.toString(list.size()+1),name.getText(),lang.getText(),Long.parseLong(price.getText()),date.getText(),author.getText(),publisher.getText(),category.getText());
+        ListManager.getINSTANCE().addBook(Integer.toString(list.size()+1),name.getText(),lang.getText(),Long.parseLong(price.getText()),date.getText(),author.getText(),publisher.getText(),category.getText());
         Stage stage = (Stage) save.getScene().getWindow();
         Controller.changeTable(Controller.list);
         stage.close();

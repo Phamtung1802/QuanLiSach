@@ -8,10 +8,6 @@ import javafx.stage.Stage;
 
 
 public class Main extends Application {
-    public static final String SECOND_SCREEN_FXML = "Popup.fxml";
-
-
-
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
@@ -20,9 +16,8 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-
     public static void main(String[] args) {
-        DataController.getINSTANCE().read();
+        ListManager.getINSTANCE().read();
         launch(args);
     }
 }

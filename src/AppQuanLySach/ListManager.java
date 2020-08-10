@@ -3,16 +3,16 @@ package AppQuanLySach;
 import java.io.File;
 import java.util.Collections;
 
-public class DataController {
+public class ListManager {
     private static BookList dataList=new BookList();
-    private static final DataController dataInterface= new DataController();
+    private static final ListManager dataInterface= new ListManager();
     private static Integer idPool;
 
-    private DataController(){
+    private ListManager(){
 
     }
 
-    public static DataController getINSTANCE() {
+    public static ListManager getINSTANCE() {
         return dataInterface;
     }
 
