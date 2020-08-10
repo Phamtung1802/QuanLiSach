@@ -1,4 +1,4 @@
-package AppQuanLySach;
+package AppQuanLySach.Data;
 
 public class Book implements Comparable<Book>{
         private String title;

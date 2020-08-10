@@ -1,4 +1,4 @@
-package AppQuanLySach;
+package AppQuanLySach.Data;
 
 import java.io.*;
 import java.util.regex.Matcher;
@@ -38,7 +38,7 @@ public class DataManager implements Serializable {
         return output;
     }
 
-    public static void WriteFile(BookList list,boolean doesAppend) {
+    public static void WriteFile(BookList list, boolean doesAppend) {
         FileWriter writer=getWriter(getIDFile(),doesAppend);
         int id=1;
         for(Book book:list) {

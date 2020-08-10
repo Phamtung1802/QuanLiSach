@@ -1,4 +1,6 @@
-package AppQuanLySach;
+package AppQuanLySach.Data;
+
+import AppQuanLySach.Data.Book;
 
 import java.util.ArrayList;
 

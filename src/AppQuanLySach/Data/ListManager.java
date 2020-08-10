@@ -1,4 +1,4 @@
-package AppQuanLySach;
+package AppQuanLySach.Data;
 
 import java.io.File;
 import java.util.Collections;
@@ -19,7 +19,7 @@ public class ListManager {
     public void removeBook(int index){
         dataList.remove(index);
         DataManager.WriteFile(dataList,false);
-        read();
+        reload();
     }
 
     public BookList addBook(String id,String title,String lang, long price, String date, String author, String publisher, String category){
@@ -53,7 +53,7 @@ public class ListManager {
     }
 
 
-    public void read(){
+    public void reload(){
         dataList=DataManager.loadList();
     }
 
@@ -63,9 +63,9 @@ public class ListManager {
 
     public void appendList(File csvFile){
         DataManager.appendFile(csvFile,dataList);
-        read();
+        reload();
         DataManager.WriteFile(dataList,false);
         Collections.sort(dataList);
-        read();
+        reload();
     }
 }

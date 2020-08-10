@@ -1,5 +1,8 @@
-package AppQuanLySach;
+package AppQuanLySach.GUI;
 
+import AppQuanLySach.Data.Book;
+import AppQuanLySach.Data.BookList;
+import AppQuanLySach.Data.ListManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
